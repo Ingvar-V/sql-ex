@@ -5,8 +5,8 @@
 */ 
 select distinct p.model,
                 l.model,
-				p.speed,
-				p.ram
+		p.speed,
+		p.ram
 from pc p join
 (select speed,
         ram
