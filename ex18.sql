@@ -9,7 +9,7 @@ with mpp as
  WHERE Color ='y') 
 select distinct c.maker, p.price
 from Printer p join 
-mpp on mpp.price=p.price and p.color='y' join
+mpp on p.price=mpp.price and p.color='y' join
 Product c ON p.model = c.model
 
 
