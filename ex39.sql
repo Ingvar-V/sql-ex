@@ -8,7 +8,5 @@ rank() over(partition by o.ship order by b.date desc) as rnk
 from Outcomes o join
 Battles b on o.battle=b.name
 )
-select distinct ship from battle_outcome b
-where b.ship in (
-select ship from battle_outcome
-where rnk=2 and result ='damaged')
+select distinct ship from battle_outcome 
+where rnk=2 and result ='damaged'
