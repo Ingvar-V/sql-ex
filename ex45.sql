@@ -11,4 +11,4 @@ select ship from outcomes
 -- названия кораблей содержащих 2 и более пробелов
 SELECT name
 FROM ships_set
-where LEN(name + '@') - LEN(REPLACE(name, ' ', '') + '@') > 1
+where LEN(name) - LEN(REPLACE(name, ' ', '')) > 1
